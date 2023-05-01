@@ -1,5 +1,6 @@
 import PhotoCard from "@/components/PhotoCard";
-export default function ColourPage() {
+
+export default function ColourPage({photos}) {
      return (
         <>
         <section>
@@ -60,6 +61,16 @@ export default function ColourPage() {
           id: 10,
           imageUrl: '/10.jpeg',
           imageAlt: 'Photo 10',
+        },
+        {
+          id: 11,
+          imageUrl: '/11.jpeg',
+          imageAlt: 'Photo 11',
+        },
+        {
+          id: 12,
+          imageUrl: '/12.jpeg',
+          imageAlt: 'Photo 12',
         },
       ];
     

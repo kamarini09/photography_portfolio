@@ -1,5 +1,4 @@
 import '@/styles/globals.css'
-// import HomePage from "@/pages";
 import Layout from "@/components/Layout";
 import App from "next/app";
 
