@@ -64,7 +64,7 @@ export default function ColourPage({photos}) {
         },
         {
           id: 11,
-          imageUrl: '/11.jpeg',
+          imageUrl: '/11.JPEG',
           imageAlt: 'Photo 11',
         },
         {
