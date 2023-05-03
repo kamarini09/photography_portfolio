@@ -10,11 +10,9 @@
   max-width: 750px;
 } */
 
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* gap: 0.5rem;
-  margin: 3rem; */
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav {

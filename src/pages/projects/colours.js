@@ -5,9 +5,11 @@ import { Image } from 'antd';
 export default function ColourPage({photos}) {
   return (
     <>
+       <div className="photo-grid">
       <Image.PreviewGroup>
         {photos.map(photo => <PhotoCard key={photo.id} imageUrl={photo.imageUrl} />)}
       </Image.PreviewGroup>
+      </div>
     </>
   );
 }
