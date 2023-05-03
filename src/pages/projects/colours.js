@@ -1,14 +1,16 @@
+
 import PhotoCard from "@/components/PhotoCard";
+import { Image } from 'antd';
 
 export default function ColourPage({photos}) {
-     return (
-        <>
-        <section>
-         {photos.map(photos =><PhotoCard key={photos.id}{...photos}/>)}
-        </section>
-        </>
-      )
-    }
+  return (
+    <>
+      <Image.PreviewGroup>
+        {photos.map(photo => <PhotoCard key={photo.id} imageUrl={photo.imageUrl} />)}
+      </Image.PreviewGroup>
+    </>
+  );
+}
     
     export async function getStaticProps() {
       const photos = [
