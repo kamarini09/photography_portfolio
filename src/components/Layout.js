@@ -5,7 +5,7 @@ export default function Layout({children, navData}){
   const router = useRouter();
 
   return (
-    <>
+    <div className='wrapper'>
       <nav>
         <ul>
           {navData.map((item, index) => (
@@ -19,7 +19,7 @@ export default function Layout({children, navData}){
       </nav>
       <main>{children}</main>
       <footer> Kamarini Moragianni</footer>
-    </>
+    </div>
   )
 }
 
