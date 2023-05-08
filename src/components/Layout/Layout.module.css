@@ -28,12 +28,12 @@
 
 .a {
   text-decoration: none;
-  color: #333333;
+  color: var(--grey);
   font-size: 18px;
   font-weight: bold;
 }
 .a.active {
-  color: #ff8c00;
+  color: var(--orange);
 }
 
 @media only screen and (max-width: 600px) {
