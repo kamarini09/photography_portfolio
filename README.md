@@ -1,6 +1,4 @@
-# Project Title
-
-Photography Portfolio
+# Photography Portfolio
 
 ## Overview
 
