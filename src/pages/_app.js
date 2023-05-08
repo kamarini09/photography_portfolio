@@ -6,7 +6,7 @@ export default function myApp({ Component, pageProps }) {
   const navData = [
     { name: "Home", link: "/" },
     { name: "Athens", link: "/projects/athens" },
-    { name: "Tomato", link: "/projects/tomato" },
+    { name: "Kitchen", link: "/projects/kitchen" },
     { name: "Colours", link: "/projects/colours" },
   ];
 

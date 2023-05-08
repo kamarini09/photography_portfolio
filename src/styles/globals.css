@@ -3,28 +3,13 @@
   padding: 0;
   margin: 0;
 }
+
 .wrapper {
   padding: 1% 4%;
 }
 
-.photo-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
+img {
+  width: 100%;
+  height: auto;
+  max-width: 750px;
 }
-
-/* .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .photo-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-    margin: 1rem;
-  }
-} */

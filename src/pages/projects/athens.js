@@ -1,13 +1,22 @@
-
-import PhotoCard from "@/components/PhotoCard";
-import { Image } from 'antd';
+import styles from "./Athens.module.css"
+import Photo from "@/components/Photo";
+import Image from "next/image";
 
 export default function AthensPage({photos}) {
   return (
     <>
-       <div className="photo-grid">
+       <div className={styles.athensgrid}>
      
-        {photos.map(photo => <PhotoCard key={photo.id} imageUrl={photo.imageUrl} />)}
+        {photos.map(photo => <Image
+                key={photo.id} 
+                src={photo.src}
+                alt={photo.alt}
+                width={photo.width}
+                height={photo.height}
+                sizes='(max-width: 750px) 100vw, 750px'
+
+        
+    />)}
       
       </div>
     </>
@@ -16,72 +25,93 @@ export default function AthensPage({photos}) {
     
     export async function getStaticProps() {
       const photos = [
-        {
-          id: 15,
-          imageUrl: '/15.jpeg',
-          imageAlt: 'Photo 9',
-        },
-        {
-          id: 16,
-          imageUrl: '/16.jpeg',
-          imageAlt: 'Photo 1',
-        },
-        {
-          id: 17,
-          imageUrl: '/17.jpeg',
-          imageAlt: 'Photo 17',
-        },
-        {
-          id: 18,
-          imageUrl: '/18.jpeg',
-          imageAlt: 'Photo 3',
-        },
-        {
-          id: 19,
-          imageUrl: '/19.jpeg',
-          imageAlt: 'Photo 4',
-        },
-        {
-          id: 20,
-          imageUrl: '/20.jpeg',
-          imageAlt: 'Photo 5',
-        },
-        {
-          id: 21,
-          imageUrl: '/21.JPG',
-          imageAlt: 'Photo 6',
-        },
-        {
-          id: 22,
-          imageUrl: '/22.JPG',
-          imageAlt: 'Photo 7',
-        },
-        // {
-        //   id: 23,
-        //   imageUrl: '/23.JPG',
-        //   imageAlt: 'Photo 8',
-        // },
-        {
-          id: 24,
-          imageUrl: '/24.jpeg',
-          imageAlt: 'Photo 9',
-        },
-        {
-          id: 25,
-          imageUrl: '/25.jpeg',
-          imageAlt: 'Photo 10',
-        },
-        {
-          id: 26,
-          imageUrl: '/26.jpeg',
-          imageAlt: 'Photo 11',
-        },
-        {
-          id: 27,
-          imageUrl: '/27.jpeg',
-          imageAlt: 'Photo 12',
-        },
-      ];
+          {
+            id: 15,
+            src: '/15.jpeg',
+            alt: 'Photo 9',
+            height:'4032',
+            width:'3024'
+
+          },
+          {
+            id: 16,
+            src: '/16.jpeg',
+            alt: 'Photo 1',
+            height:'4032',
+            width:'3024'
+          },
+          {
+            id: 17,
+            src: '/17.jpeg',
+            alt: 'Photo 17',
+            height:'4032',
+            width:'3024'
+          },
+          {
+            id: 18,
+            src: '/18.jpeg',
+            alt: 'Photo 3',
+            height:'4032',
+            width:'3024'
+          },
+          {
+            id: 19,
+            src: '/19.jpeg',
+            alt: 'Photo 4',
+            height:'4032',
+            width:'3024'
+          },
+          {
+            id: 20,
+            src: '/20.jpeg',
+            alt: 'Photo 5',
+            height:'4032',
+            width:'3024'
+          },
+          {
+            id: 21,
+            src: '/21.JPG',
+            alt: 'Photo 6',
+            height:'4032',
+            width:'3024'
+          },
+          {
+            id: 22,
+            src: '/22.JPG',
+            alt: 'Photo 7',
+            height:'4032',
+            width:'3024'
+          },
+        
+          {
+            id: 24,
+            src: '/24.jpeg',
+            alt: 'Photo 9',
+            height:'4032',
+            width:'3024'
+          },
+          {
+            id: 25,
+            src: '/25.jpeg',
+            alt: 'Photo 10',
+            height:'4032',
+            width:'3024'
+          },
+          {
+            id: 26,
+            src: '/26.jpeg',
+            alt: 'Photo 11',
+            height:'4032',
+            width:'3024'
+          },
+          {
+            id: 27,
+            src: '/27.jpeg',
+            alt: 'Photo 12',
+            height:'4032',
+            width:'3024'
+          },
+        ];
     
       return {
         props: {
