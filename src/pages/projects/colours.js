@@ -1,7 +1,8 @@
 
-import PhotoCard from "@/components/PhotoCard";
-import { Image } from 'antd';
+import PhotoCard from "@/components/PhotoCard"
 import styles from "./Colours.module.css"
+import { Image } from 'antd';
+
 
 export default function ColourPage({photos}) {
   return (
