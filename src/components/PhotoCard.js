@@ -9,8 +9,9 @@ export default function PhotoCard(props){
     <Image 
       preview={{ visible: false }}
       className={styles.image}
+      width={300}
       src={props.imageUrl}
-      alt=""
+      alt={props.imageAlt}
       onClick={() => setVisible(true)}
     />
   )

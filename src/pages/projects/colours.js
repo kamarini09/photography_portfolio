@@ -1,6 +1,7 @@
 
 import PhotoCard from "@/components/PhotoCard"
 import styles from "./Colours.module.css"
+import { Image } from "antd";
 
 
 
@@ -9,9 +10,9 @@ export default function ColourPage({photos}) {
   return (
     <>
        <div className={styles.photogrid}>
-     
+       <Image.PreviewGroup className={styles.preview}>
         {photos.map(photo => <PhotoCard key={photo.id} imageUrl={photo.imageUrl} />)}
-     
+        </Image.PreviewGroup>
       </div>
     </>
   );
