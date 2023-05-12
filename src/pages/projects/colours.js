@@ -8,9 +8,9 @@ export default function ColourPage({photos}) {
   return (
     <>
        <div className={styles.photogrid}>
-      <Image.PreviewGroup>
+     
         {photos.map(photo => <PhotoCard key={photo.id} imageUrl={photo.imageUrl} />)}
-      </Image.PreviewGroup>
+     
       </div>
     </>
   );
