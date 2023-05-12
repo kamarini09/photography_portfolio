@@ -1,7 +1,8 @@
 
 import PhotoCard from "@/components/PhotoCard"
 import styles from "./Colours.module.css"
-import { Image } from 'antd';
+
+
 
 
 export default function ColourPage({photos}) {
@@ -19,64 +20,64 @@ export default function ColourPage({photos}) {
     export async function getStaticProps() {
       const photos = [
         {
-          id: 1,
-          imageUrl: '/1.jpeg',
-          imageAlt: 'Photo 1',
+          id: 40,
+          imageUrl: '/40.png',
+          imageAlt: 'Photo of lemons',
         },
         {
-          id: 2,
-          imageUrl: '/2.jpeg',
-          imageAlt: 'Photo 2',
+          id: 41,
+          imageUrl: '/41.png',
+          imageAlt: 'Photo of tomatoes',
         },
         {
-          id: 3,
-          imageUrl: '/3.jpeg',
-          imageAlt: 'Photo 3',
+          id: 42,
+          imageUrl: '/42.png',
+          imageAlt: 'Photo of sunflowers',
         },
         {
-          id: 4,
-          imageUrl: '/4.jpeg',
-          imageAlt: 'Photo 4',
+          id: 43,
+          imageUrl: '/43.png',
+          imageAlt: 'Photo of old things',
         },
         {
-          id: 5,
-          imageUrl: '/5.jpeg',
-          imageAlt: 'Photo 5',
+          id: 44,
+          imageUrl: '/44.png',
+          imageAlt: 'Photo of an orange car',
         },
         {
-          id: 6,
-          imageUrl: '/6.jpeg',
-          imageAlt: 'Photo 6',
+          id: 45,
+          imageUrl: '/45.png',
+          imageAlt: 'Photo of a store',
         },
         {
-          id: 7,
-          imageUrl: '/7.jpeg',
-          imageAlt: 'Photo 7',
+          id: 46,
+          imageUrl: '/46.png',
+          imageAlt: 'Photo of food',
         },
         {
-          id: 8,
-          imageUrl: '/8.jpeg',
-          imageAlt: 'Photo 8',
+          id: 47,
+          imageUrl: '/47.png',
+          imageAlt: 'Photo of fruits',
         },
         {
-          id: 9,
-          imageUrl: '/9.jpeg',
-          imageAlt: 'Photo 9',
+          id: 48,
+          imageUrl: '/48.png',
+          imageAlt: 'Photo of souvlaki',
         },
         {
-          id: 10,
-          imageUrl: '/10.jpeg',
-          imageAlt: 'Photo 10',
+          id: 49,
+          imageUrl: '/49.png',
+          imageAlt: 'Photo of yellow store',
         },
         {
-          id: 11,
-          imageUrl: '/11.JPG',
-          imageAlt: 'Photo 11',
+          id: 50,
+          imageUrl: '/50.png',
+          imageAlt: 'Photo of a colourful market',
         },
         {
-          id: 12,
-          imageUrl: '/12.jpeg',
-          imageAlt: 'Photo 12',
+          id: 51,
+          imageUrl: '/51.png',
+          imageAlt: 'Photo of a yellow building',
         },
       ];
     

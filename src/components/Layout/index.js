@@ -24,7 +24,7 @@ export default function Layout({ children, navData }) {
         </ul>
       </nav>
       <main>{children}</main>
-      <footer> Kamarini Moragianni</footer>
+     
     </div>
   );
 }

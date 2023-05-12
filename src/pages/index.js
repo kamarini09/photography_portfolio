@@ -6,7 +6,7 @@ import styles from '@/styles/Home.module.css'
 export default function HomePage() {
   return (
     <div className={styles.grid}>
-      <img className={styles.img} src='./4.jpeg' alt='sunflowers'></img>
+      <img className={styles.img} src='./40.png' alt='sunflowers'></img>
       <div>
          <h1 className={styles.h1}>Hello there!</h1>
          <p className={styles.p}>Welcome to my photography portfolio!My name is Kamarini and I am a photographer from Greece. 
